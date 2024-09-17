@@ -1,0 +1,40 @@
+*{
+    padding-top: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contain{
+    
+    position: relative;
+    min-height: 100vh; 
+    background: #bbb;
+
+    
+}
+.contain .image-contain{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+
+}
+.contain .image-contain .image{
+    height: 250px;
+    width: 350px;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.contain .image-contain .image img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    transition: .2s linear;
+
+}
+.contain .image-contain .image:hover img{
+    transform: scale(1.1);
+}
